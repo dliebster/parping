@@ -1,1 +1,1 @@
-from .parping import *
+from src.parping.parping import *
