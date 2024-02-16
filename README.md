@@ -1,6 +1,7 @@
 Simple parallel ipv4 ping library / cli utility.
 
 Cli accepts ip range input, e.g. 10.10.10.1-255, and returns 2 lists, responding and non-responding ips
+Library call accepts CIDR pair.
 
 This originated from need to quick-check many IPs after disaster-recovery excercises.
 intended to be moldable, and propably offers most of its value as an example of
