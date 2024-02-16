@@ -8,12 +8,12 @@ version = "0.0.1"
 authors = [
   { name="Dan Liebster", email="daniel.liebster@gmail.com" },
 ]
-description = "A simple parallel ipv4 pinger"
+description = "A simple parallel ipv4 ping utility"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: GPLv3 License",
     "Operating System :: OS Independent",
 ]
 

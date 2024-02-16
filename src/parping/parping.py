@@ -23,56 +23,6 @@ ips = []
 iplist = []
 
 
-# The following is regex to check if an ip address was supplied as an arg.
-# ippatt = re.compile(
-#     ('^([2][0-5][0-5]|^[1]{0,1}[0-9]{1,2})'
-#      '\.([0-2][0-5][0-5]|[1]{0,1}[0-9]{1,2})'
-#      '\.([0-2][0-5][0-5]|[1]{0,1}[0-9]{1,2})'
-#      '\.([0-2][0-5][0-5]|[1]{0,1}[0-9]{1,2})$'))
-#
-# while indata == "none":
-#     if len(sys.argv) > 1:
-#
-#         indata = "cli"
-#         userargs = sys.argv[1]
-#         ipmatch = re.search(ippatt, userargs.split("-")[0])
-#
-#         if ipmatch:
-#
-#             iprange = userargs.split(".")
-#             a = iprange[0]
-#             b = iprange[1]
-#             c = iprange[2]
-#             d = iprange[3]
-#
-#             drange = d.split("-")
-#             dbegin = int(drange[0])
-#             dend = int(drange[1])
-#
-#             index = dbegin
-#
-#             while index <= dend:
-#                 itemip = a + "." + b + "." + c + "." + str(index)
-#                 ips.append(itemip)
-#                 index += 1
-#
-#     else:
-#         indata = "filelist"
-#         try:
-#             ipfile = open('iplist', 'r')
-#         except IOError as e:
-#             print(
-#                 "\n\n Expecting to find file named \"iplist\" given the lack of subnet iprange argument. ({0}): {1}\n\n".format(
-#                     e.errno, e.strerror))
-#             exit()
-#         except:
-#             print("Unexpected error:", sys.exc_info()[0])
-#             raise
-#
-#         for item in ipfile:
-#             ips.append(item)
-
-
 def valid_ip(address):
     try:
         socket.inet_aton(address)
